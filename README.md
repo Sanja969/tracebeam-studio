@@ -4,6 +4,8 @@ Local-first realtime observability dashboard for Tracebeam SDK.
 
 Tracebeam Studio helps developers inspect events, traces, sessions, fetch requests, errors, latency and throughput locally — without cloud setup.
 
+![Tracebeam Demo](./demo.gif)
+
 ## What it includes
 
 - Go ingestion server
