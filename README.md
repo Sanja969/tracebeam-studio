@@ -1,12 +1,15 @@
 # Tracebeam Studio ⚡
 
-Local-first realtime observability dashboard for Tracebeam SDK.
+Tracebeam Studio is a local-first realtime observability platform for frontend applications built with a custom TypeScript SDK, Go websocket backend, and SQLite event persistence.
 
 Tracebeam Studio helps developers inspect events, traces, sessions, fetch requests, errors, latency and throughput locally — without cloud setup.
 
 ![Tracebeam Demo](./demo.gif)
+```Markdown
+Realtime trace visualization, fetch instrumentation, error tracking, and session monitoring in action.
+```
 
-## What it includes
+## Platform components
 
 - Go ingestion server
 - SQLite persistence
@@ -17,14 +20,30 @@ Tracebeam Studio helps developers inspect events, traces, sessions, fetch reques
 - Session and trace views
 - Latency and throughput charts
 
+## Features
+
+- Realtime frontend observability dashboard
+- Custom TypeScript SDK
+- Runtime error tracking
+- Automatic fetch instrumentation
+- Performance measurements
+- Trace and session grouping
+- Realtime WebSocket streaming
+- SQLite event persistence
+- Local-first architecture
+- Docker Compose setup
+- Overlay debugging widget
+- Network request inspection
+- Trace waterfall visualization
+
 ## Architecture
 
 ```txt
-Application + tracebeam SDK
-        ↓ HTTP POST /events
-Tracebeam Studio Server
-        ↓ SQLite + WebSocket
-Tracebeam Studio Web Dashboard
+Frontend Application + Tracebeam SDK
+            ↓ HTTP /events
+Tracebeam Studio Server (Go + SQLite)
+            ↓ WebSocket streaming
+Tracebeam Studio Dashboard (React)
 ```
 
 ## Run locally
@@ -82,9 +101,9 @@ enableGlobalErrorCapture();
 * Studio Server: https://github.com/Sanja969/tracebeam-studio-server
 * Studio Web: https://github.com/Sanja969/tracebeam-studio-web
 
-## Status
+## Current status
 
-Tracebeam Studio is under active development.
+Tracebeam Studio is actively being developed and expanded with additional observability tooling features.
 
 ## License
 
