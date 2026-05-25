@@ -1,0 +1,19 @@
+services:
+  server:
+    build:
+      context: ./tracebeam-studio-server
+    ports:
+      - "8080:8080"
+    volumes:
+      - tracebeam-data:/app/data
+
+  web:
+    build:
+      context: ./tracebeam-studio-web
+    ports:
+      - "5173:80"
+    depends_on:
+      - server
+
+volumes:
+  tracebeam-data:

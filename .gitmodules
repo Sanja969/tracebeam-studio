@@ -1,0 +1,6 @@
+[submodule "tracebeam-studio-server"]
+	path = tracebeam-studio-server
+	url = git@github.com:Sanja969/tracebeam-studio-server.git
+[submodule "tracebeam-studio-web"]
+	path = tracebeam-studio-web
+	url = git@github.com:Sanja969/tracebeam-studio-web.git
