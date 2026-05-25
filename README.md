@@ -5,9 +5,8 @@ Tracebeam Studio is a local-first realtime observability platform for frontend a
 Tracebeam Studio helps developers inspect events, traces, sessions, fetch requests, errors, latency and throughput locally — without cloud setup.
 
 ![Tracebeam Demo](./demo.gif)
-```Markdown
 Realtime trace visualization, fetch instrumentation, error tracking, and session monitoring in action.
-```
+
 
 ## Platform components
 
